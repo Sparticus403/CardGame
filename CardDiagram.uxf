@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>160</y>
+      <w>240</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: PlayingCard
+--
+- suit : String
+- color : UIColor
+- rank : Int
+- frontImage : UIImage
+--
++ get/set
++ init
+bg=magenta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>160</y>
+      <w>200</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model :: Card
+--
+- backImage : UIImage
+- isFaceUp : Bool
+--
++ init()
++ getBackImage() : UIImage
++ isFaceUp() : Bool
++ toString(): String
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>360</y>
+      <w>100</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>CCGCard
+--
+-score
+-rating
+-rarity
+-text
+--
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>530</x>
+      <y>210</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+</diagram>
