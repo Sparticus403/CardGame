@@ -62,16 +62,32 @@ class PlayingCard : Card
         frontImage = UIImage()
         color = UIColor()
         rank = 0
-        suit = ""
+        suit = String()
     }
-//    java style getters/setters
-//    func getRank() -> Int
-//    {
-//        return self.rank
-//    }
-//    func setRank(rank : Int)
-//    {
-//        self.rank = rank
-//    }
+    
+    override func toString() -> String
+    {
+        let facing : String
+        if self.isUp()
+        {
+            facing = "is facing up."
+        }
+        else
+        {
+            facing = "is facing down."
+        }
+        let description = "This playing card has a value of \(rank) a color of \(color), the back image is \(self.getBackImage)and is of the \(suit) suit \(facing)"
+        return description
+        
+    }
+    //java style getters/setters
+    func getRank() -> Int
+    {
+        return self.rank
+    }
+    func setRank(rank : Int)
+    {
+        self.rank = rank
+    }
     
 }
