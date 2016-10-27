@@ -63,7 +63,7 @@
 				0E1ACF501DBFAD34002CC8C0 /* Assets.xcassets */,
 				0E1ACF521DBFAD34002CC8C0 /* LaunchScreen.storyboard */,
 				0E1ACF551DBFAD34002CC8C0 /* Info.plist */,
-				0E6D44B21DC2531200CA7258 /* Controller */,
+				0E6D44B01DC251F000CA7258 /* CardGameController.swift */,
 				0E1ACF5F1DBFAECD002CC8C0 /* Model */,
 			);
 			path = CardGame;
@@ -77,14 +77,6 @@
 			);
 			name = Model;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		0E6D44B21DC2531200CA7258 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				0E6D44B01DC251F000CA7258 /* CardGameController.swift */,
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
