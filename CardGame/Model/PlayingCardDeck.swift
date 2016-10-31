@@ -6,9 +6,24 @@
 //  Copyright © 2016 CTEC. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class PlayingCardDeck : Deck
 {
     
+    
+    override init()
+    {
+        
+    }
+    
+    func shuffleDeck() -> Void
+    {
+        
+    }
+    
+    func orderDeck() -> Void
+    {
+        
+    }
 }
