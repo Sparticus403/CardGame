@@ -1,5 +1,5 @@
 //
-//  Deck.swift
+//  PlayingCardDeck.swift
 //  CardGame
 //
 //  Created by Williamson, Todd on 10/31/16.
@@ -8,12 +8,7 @@
 
 import UIKit
 
-class Deck
+class PlayingCardDeck : Deck
 {
     
-    
-    init()
-    {
-        
-    }
 }
