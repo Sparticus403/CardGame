@@ -10,7 +10,7 @@ import UIKit
 
 class PlayingCard : Card
 {
-    private var rank : Int
+    internal var rank : Int
     {
         get
         {
@@ -23,7 +23,7 @@ class PlayingCard : Card
         
     }
     
-    private var suit : String
+    internal var suit : String
     {
         get
         {
@@ -34,7 +34,7 @@ class PlayingCard : Card
             self.suit = suit
         }
     }
-    private var color : UIColor
+    internal var color : UIColor
     {
         get
         {
@@ -45,7 +45,7 @@ class PlayingCard : Card
             self.color = color
         }
     }
-    private var frontImage : UIImage
+    internal var frontImage : UIImage
     {
         get
         {
@@ -93,15 +93,15 @@ class PlayingCard : Card
         return description
         
     }
-//    //java style getters/setters
-//    func getRank() -> Int
-//    {
-//        return self.rank
-//    }
-//    func setRank(rank : Int)
-//    {
-//        self.rank = rank
-//    }
+    //java style getters/setters
+    func getRank() -> Int
+    {
+        return self.rank
+    }
+    func setRank(rank : Int)
+    {
+        self.rank = rank
+    }
     
     // The modifier 'class' in front of the func means that this method is visible without creatng an instance of the class in question.
     // This is a class method, not an isnstance method.
