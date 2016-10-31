@@ -93,14 +93,26 @@ class PlayingCard : Card
         return description
         
     }
-    //java style getters/setters
-    func getRank() -> Int
+//    //java style getters/setters
+//    func getRank() -> Int
+//    {
+//        return self.rank
+//    }
+//    func setRank(rank : Int)
+//    {
+//        self.rank = rank
+//    }
+    
+    // The modifier 'class' in front of the func means that this method is visible without creatng an instance of the class in question.
+    // This is a class method, not an isnstance method.
+    class func validRanks() -> [String]
     {
-        return self.rank
+        return ["??","A","2","3","4","5","6","7","8","9","10","J","Q","K"]
     }
-    func setRank(rank : Int)
+    
+    class func validSuits() -> [String]
     {
-        self.rank = rank
+        return ["♥️","♠️","♦️","♣️"]
     }
     
 }
