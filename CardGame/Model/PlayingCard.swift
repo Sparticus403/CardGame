@@ -59,10 +59,20 @@ class PlayingCard : Card
     override init()
     {
         super.init()
-        frontImage = UIImage()
-        color = UIColor()
+        //frontImage = UIImage(named: "")!
+        color = UIColor.redColor()
         rank = 0
         suit = String()
+    }
+    
+    init(withRank: Int, ofSuit: String)
+    {
+        super.init()
+        //frontImage = UIImage(named: "")!
+        color = UIColor.redColor()
+        
+        rank = withRank
+        suit = ofSuit
     }
     
     override func toString() -> String
