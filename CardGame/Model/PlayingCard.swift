@@ -22,17 +22,17 @@ class PlayingCard : Card
     override init()
     {
         
-        //frontImage = UIImage(named: "")!
-        color = UIColor.redColor()
-        rank = 0
-        suit = String()
+        self.frontImage = UIImage(named: "")!
+        self.color = UIColor.redColor()
+        self.rank = 0
+        self.suit = String()
         super.init()
     }
     
     init(withRank: Int, ofSuit: String)
     {
         
-        //frontImage = UIImage(named: "")!
+        frontImage = UIImage(named: "")!
         color = UIColor.redColor()
         
         rank = withRank
