@@ -11,68 +11,33 @@ import UIKit
 class PlayingCard : Card
 {
     internal var rank : Int
-    {
-        get
-        {
-            return self.rank
-        }
-        set(rank)
-        {
-            self.rank = rank
-        }
-        
-    }
+    
     
     internal var suit : String
-    {
-        get
-        {
-            return self.suit
-        }
-        set(suit)
-        {
-            self.suit = suit
-        }
-    }
+    
     internal var color : UIColor
-    {
-        get
-        {
-           return self.color
-        }
-        set(color)
-        {
-            self.color = color
-        }
-    }
+    
     internal var frontImage : UIImage
-    {
-        get
-        {
-            return self.frontImage
-        }
-        set(frontImage)
-        {
-            self.frontImage = frontImage
-        }
-    }
+    
     override init()
     {
-        super.init()
+        
         //frontImage = UIImage(named: "")!
         color = UIColor.redColor()
         rank = 0
         suit = String()
+        super.init()
     }
     
     init(withRank: Int, ofSuit: String)
     {
-        super.init()
+        
         //frontImage = UIImage(named: "")!
         color = UIColor.redColor()
         
         rank = withRank
         suit = ofSuit
+        super.init()
     }
     
     override func toString() -> String
@@ -93,16 +58,16 @@ class PlayingCard : Card
         return description
         
     }
-    //java style getters/setters
-    func getRank() -> Int
-    {
-        return self.rank
-    }
-    func setRank(rank : Int)
-    {
-        self.rank = rank
-    }
-    
+//    //java style getters/setters
+//    func getRank() -> Int
+//    {
+//        return self.rank
+//    }
+//    func setRank(rank : Int)
+//    {
+//        self.rank = rank
+//    }
+//    
     // The modifier 'class' in front of the func means that this method is visible without creatng an instance of the class in question.
     // This is a class method, not an isnstance method.
     class func validRanks() -> [String]
