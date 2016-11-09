@@ -20,15 +20,22 @@ class CardGameController : UIViewController
     
     override func viewDidLoad()
     {
-        let tempCard = Card()
-        print(tempCard.toString())
-        let otherTemp = PlayingCard()
-        print(otherTemp.toString())
+        
     }
     @IBAction func flipCard(sender: UIButton)
     {
         clickCount += 1
         let words = "The card has been clicked \(clickCount) times"
         cardLabel.text = words
+        
+        if let currentCard = currentDeck.drawCard() as? PlayingCard
+        {
+            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+        }
+        else
+        {
+            cardLabel.text = "The deck was exhausted"
+            self.currentDeck = PlayingCardDeck()
+        }
     }
 }

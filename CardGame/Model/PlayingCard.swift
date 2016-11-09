@@ -22,7 +22,7 @@ class PlayingCard : Card
     override init()
     {
         
-        self.frontImage = UIImage(named: "")!
+        self.frontImage = UIImage(named: "CardBack2")!
         self.color = UIColor.redColor()
         self.rank = 0
         self.suit = String()
@@ -32,7 +32,7 @@ class PlayingCard : Card
     init(withRank: Int, ofSuit: String)
     {
         
-        frontImage = UIImage(named: "")!
+        frontImage = UIImage(named: "CardBack2")!
         color = UIColor.redColor()
         
         rank = withRank
@@ -57,6 +57,12 @@ class PlayingCard : Card
         let description = "This playing card has a value of \(rank) a color of \(color), the back image is \(self.getBackImage)and is of the \(suit) suit \(facing)"
         return description
         
+    }
+    
+    func getCardData() -> String
+    {
+        let data = "\(PlayingCard.validRanks()[rank]) \(suit)"
+        return data
     }
 //    //java style getters/setters
 //    func getRank() -> Int
