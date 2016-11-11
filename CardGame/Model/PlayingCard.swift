@@ -12,7 +12,6 @@ class PlayingCard : Card
 {
     internal var rank : Int
     
-    
     internal var suit : String
     
     internal var color : UIColor
