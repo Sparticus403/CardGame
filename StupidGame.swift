@@ -7,31 +7,35 @@
 //  Copyright © 2016 CTEC. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class StupidGame
 {
     //Declaration section
-    internal var score : Int
-    internal var discardPile : UIImage
-    internal var winnerPile : UIImage
-    internal var drawingDeck : UIImage
-    internal var hand : UIImage
-    
+//    internal var score : Int
+    internal var discardPile : [PlayingCard]
+    internal var winnerPile : [PlayingCard]
+//    internal var drawingDeck : UIImage
+    internal var hand : [PlayingCard]
+    internal var gameDeck : PlayingCardDeck
     
     //inits
     init()
     {
-        self.score = 0
-        self.discardPile = UIImage()
-        self.winnerPile = UIImage()
-        self.drawingDeck = UIImage()
-        self.hand = UIImage()
+//        self.score = 0
+        self.discardPile = [PlayingCard]
+        self.winnerPile = [PlayingCard]
+//        self.drawingDeck = UIImage()
+        self.hand = [PlayingCard]()
+        self.gameDeck = PlayingCardDeck()
     }
     
     //Methods
     func startGame() -> Void
     {
+        gameDeck.shuffleDeck()
+        hand.append((gameDeck.drawCard() as? PlayingCard)!)
+        hand.append((gameDeck.drawCard() as? PlayingCard)!)
         
     }
 }
