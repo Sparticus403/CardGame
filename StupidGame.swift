@@ -23,8 +23,8 @@ class StupidGame
     init()
     {
 //        self.score = 0
-        self.discardPile = [PlayingCard]
-        self.winnerPile = [PlayingCard]
+        self.discardPile = [PlayingCard]()
+        self.winnerPile = [PlayingCard]()
 //        self.drawingDeck = UIImage()
         self.hand = [PlayingCard]()
         self.gameDeck = PlayingCardDeck()

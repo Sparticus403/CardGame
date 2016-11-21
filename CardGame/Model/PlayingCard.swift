@@ -11,17 +11,12 @@ import UIKit
 class PlayingCard : Card
 {
     internal var rank : Int
-    
     internal var suit : String
-    
     internal var color : UIColor
-    
-    internal var frontImage : UIImage
     
     override init()
     {
         
-        self.frontImage = UIImage(named: "CardBack2")!
         self.color = UIColor.redColor()
         self.rank = 0
         self.suit = String()
@@ -31,7 +26,6 @@ class PlayingCard : Card
     init(withRank: Int, ofSuit: String)
     {
         
-        frontImage = UIImage(named: "CardBack2")!
         color = UIColor.redColor()
         
         rank = withRank
@@ -53,7 +47,7 @@ class PlayingCard : Card
         
         
         
-        let description = "This playing card has a value of \(rank) a color of \(color), the back image is \(self.getBackImage)and is of the \(suit) suit \(facing)"
+        let description = "This playing card has a value of \(rank) a color of \(color), and is of the \(suit) suit \(facing)"
         return description
         
     }
