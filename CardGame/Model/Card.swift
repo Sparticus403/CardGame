@@ -10,9 +10,6 @@ import UIKit
 
 class Card
 {
-    
-    
-    
     internal var isFaceUp : Bool
         
     init()

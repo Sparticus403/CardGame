@@ -11,11 +11,9 @@ import UIKit
 class CardGameController : UIViewController
 {
     @IBOutlet weak var cardButton: UIButton!
-    
     @IBOutlet weak var cardLabel: UILabel!
     
     private lazy var currentDeck = PlayingCardDeck()
-    
     private lazy var clickCount = Int()
     
     override func viewDidLoad()
