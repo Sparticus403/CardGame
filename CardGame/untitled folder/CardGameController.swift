@@ -12,6 +12,7 @@ class CardGameController : UIViewController
 {
     @IBOutlet weak var cardButton: UIButton!
     @IBOutlet weak var cardLabel: UILabel!
+    @IBOutlet weak var cardButton2: UIButton!
     
     private lazy var currentDeck = PlayingCardDeck()
     private lazy var clickCount = Int()
@@ -25,6 +26,20 @@ class CardGameController : UIViewController
         clickCount += 1
         let words = "The card has been clicked \(clickCount) times"
         cardLabel.text = words
+        
+        if let currentCard = currentDeck.drawCard() as? PlayingCard
+        {
+            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+        }
+        else
+        {
+            cardLabel.text = "The deck was exhausted"
+            self.currentDeck = PlayingCardDeck()
+        }
+    }
+    @IBAction func flipCard2(sender: UIButton)
+    {
+        clickCount += 1
         
         if let currentCard = currentDeck.drawCard() as? PlayingCard
         {

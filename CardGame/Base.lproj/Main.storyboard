@@ -17,55 +17,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Card Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F82-uC-6kR">
-                                <rect key="frame" x="163" y="53" width="274" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Card Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F82-uC-6kR">
+                                <rect key="frame" x="163" y="146" width="274" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="64" y="132" width="273" height="21"/>
+                                </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qD-Qc-lqI">
-                                <rect key="frame" x="163" y="94" width="274" height="411"/>
-                                <state key="normal" title="CardButton" image="CardBack2"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="69" y="194" width="274" height="411"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qD-Qc-lqI">
+                                <rect key="frame" x="211" y="175" width="179" height="250"/>
+                                <state key="normal" title="CardButton" image="CardBack2">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="20" y="242" width="154" height="240"/>
                                 </variation>
                                 <connections>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F42-gm-YKr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7d-o1-HUf">
+                                <rect key="frame" x="20" y="175" width="179" height="250"/>
+                                <state key="normal" title="CardButton3" image="CardBack2">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="123" y="521" width="154" height="240"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vc3-PN-7Jn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qY-ia-LpQ">
+                                <rect key="frame" x="401" y="175" width="179" height="250"/>
+                                <state key="normal" title="CardButton2" image="CardBack2">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="226" y="242" width="154" height="240"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TRF-Io-1G7"/>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m8u-GJ-C5j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9qD-Qc-lqI" firstAttribute="width" secondItem="F82-uC-6kR" secondAttribute="width" id="1t8-Ut-kXs"/>
-                            <constraint firstItem="F82-uC-6kR" firstAttribute="width" secondItem="9qD-Qc-lqI" secondAttribute="width" id="6eO-v6-z6s"/>
-                            <constraint firstItem="F82-uC-6kR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AKG-j8-R0e"/>
-                            <constraint firstItem="F82-uC-6kR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="S8H-mn-o30"/>
-                            <constraint firstItem="9qD-Qc-lqI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="arX-KM-kxr"/>
-                            <constraint firstItem="9qD-Qc-lqI" firstAttribute="top" secondItem="F82-uC-6kR" secondAttribute="bottom" constant="20" id="mxM-ga-PVd"/>
-                            <constraint firstItem="F82-uC-6kR" firstAttribute="leading" secondItem="9qD-Qc-lqI" secondAttribute="leading" id="og3-L3-mu5"/>
-                            <constraint firstItem="9qD-Qc-lqI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x36-p3-Z1c"/>
+                            <constraint firstItem="5qY-ia-LpQ" firstAttribute="leading" secondItem="9qD-Qc-lqI" secondAttribute="trailing" constant="11" id="4Ye-7j-Iy2"/>
+                            <constraint firstItem="5qY-ia-LpQ" firstAttribute="leading" secondItem="9qD-Qc-lqI" secondAttribute="trailing" constant="52" id="6KE-zN-2if"/>
+                            <constraint firstItem="9qD-Qc-lqI" firstAttribute="leading" secondItem="j7d-o1-HUf" secondAttribute="trailing" constant="12" id="Skw-1v-rMG"/>
+                            <constraint firstItem="F82-uC-6kR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="112" id="kjL-23-Zq8"/>
+                            <constraint firstItem="9qD-Qc-lqI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rUM-M1-nMr"/>
+                            <constraint firstItem="j7d-o1-HUf" firstAttribute="top" secondItem="F82-uC-6kR" secondAttribute="bottom" constant="367" id="wfR-fW-VwK"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="AKG-j8-R0e"/>
-                                <exclude reference="S8H-mn-o30"/>
+                                <exclude reference="wfR-fW-VwK"/>
+                                <exclude reference="kjL-23-Zq8"/>
+                                <exclude reference="6KE-zN-2if"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="AKG-j8-R0e"/>
-                                <include reference="S8H-mn-o30"/>
+                                <include reference="wfR-fW-VwK"/>
+                                <include reference="kjL-23-Zq8"/>
+                                <include reference="6KE-zN-2if"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="cardButton" destination="9qD-Qc-lqI" id="pIr-Sg-rOf"/>
+                        <outlet property="cardButton2" destination="5qY-ia-LpQ" id="Idz-kx-0op"/>
                         <outlet property="cardLabel" destination="F82-uC-6kR" id="hnG-Xe-EVp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="259" y="328"/>
+            <point key="canvasLocation" x="258" y="327.75"/>
         </scene>
     </scenes>
     <resources>
