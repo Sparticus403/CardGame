@@ -39,7 +39,7 @@ class StupidGame
         
     }
     
-    private func drawCards() -> Void
+    fileprivate func drawCards() -> Void
     {
         hand.append((gameDeck.drawCard() as? PlayingCard)!)
         hand.append((gameDeck.drawCard() as? PlayingCard)!)
